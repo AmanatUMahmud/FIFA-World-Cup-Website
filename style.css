@@ -1,0 +1,66 @@
+/* Linking with google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+/* body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Graduate', cursive;
+    ;
+}
+/* top section code starts here */
+.top-section {
+    background-color: black;
+    border-radius: 25px;
+    display: flex;
+    margin: 40px 80px;
+    height: 400px;
+    /* width: 80%; */
+}
+
+.top-section-info {
+    color: white;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.top-section-info h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.top-section-info p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #003865;
+    padding: 10px 20px;
+    /* transform: translate(200px); */
+}
+/* .btn:hover{
+    transform: translate(200px)
+} */
+.top-section img {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+/* top section code ends here */
+
+/* Main section styles*/
+
+    /* sidebar styles */
+.sidebar{
+    background-color: black;
+    width: 180px;
+    /* padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px; */
+    padding: 5px 15px 5px 15px;
+}
+.sidebar h4{
+    background-color: white;
+}
