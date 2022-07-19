@@ -60,7 +60,16 @@ body {
     padding-right: 15px;
     padding-bottom: 5px; */
     padding: 5px 15px 5px 15px;
+    margin-left: 80px;
+    border-radius: 5px;
 }
 .sidebar h4{
     background-color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+}
+.sidebar .selected{
+    background-color: #003865;
+    color: white;
 }
