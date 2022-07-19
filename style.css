@@ -8,6 +8,7 @@ body {
     font-family: 'Graduate', cursive;
     ;
 }
+
 /* top section code starts here */
 .top-section {
     background-color: black;
@@ -40,6 +41,7 @@ body {
     padding: 10px 20px;
     /* transform: translate(200px); */
 }
+
 /* .btn:hover{
     transform: translate(200px)
 } */
@@ -47,12 +49,13 @@ body {
     margin-top: 20px;
     margin-right: 20px;
 }
+
 /* top section code ends here */
 
 /* Main section styles*/
 
-    /* sidebar styles */
-.sidebar{
+/* sidebar styles */
+.sidebar {
     background-color: black;
     width: 180px;
     /* padding-top: 5px;
@@ -62,14 +65,54 @@ body {
     padding: 5px 15px 5px 15px;
     margin-left: 80px;
     border-radius: 5px;
+    height: 200px;
 }
-.sidebar h4{
+
+.sidebar h4 {
     background-color: white;
     text-align: center;
     font-size: 14px;
     padding: 5px;
 }
-.sidebar .selected{
+
+.sidebar .selected {
     background-color: #003865;
     color: white;
+}
+
+/* blog styles */
+.middle-section{
+    display: flex;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.blogs .blog{
+    width: 80%;
+}
+.blogs .blog .blog-info{
+    margin-left: 10px;
+}
+.blogs .blog h4 {
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 85px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.blogs .blog p {
+    margin: 5px 0;
+}
+
+.time-and-chat{
+    margin-top: 10px;
+}
+.time img {
+    vertical-align: middle;
+}
+.chat img{
+    vertical-align: middle;
 }
