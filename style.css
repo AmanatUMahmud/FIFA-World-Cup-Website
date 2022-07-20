@@ -39,11 +39,11 @@ body {
     color: white;
     background-color: #003865;
     padding: 10px 20px;
-    /* transform: translate(200px); */
+    /* transition: width 0.5s; */
 }
 
 /* .btn:hover{
-    transform: translate(200px)
+    width: 400px;
 } */
 .top-section img {
     margin-top: 20px;
@@ -135,36 +135,51 @@ body {
 .chat img {
     vertical-align: middle;
 }
+
+.view-all{
+    display: none;
+}
 /* Middle section styles ends here */
 
 /* Footer styles starts here */
-footer{
+footer {
     background-color: black;
-    color:white;
+    color: white;
 }
-footer h1{
+
+footer h1 {
     text-align: center;
     padding-top: 100px;
 }
-footer hr{
+
+footer hr {
     width: 80%;
     border-bottom: 0;
 }
-.footer-links{
+
+.footer-links {
     margin-left: 40px;
 }
-.footer-links a{
+
+.footer-links a {
     text-decoration: none;
     color: white;
     margin: 30px;
     font-size: 12px;
 }
-.social-icons{
+
+.social-icons {
     margin-left: 270px;
     margin-top: 30px;
     padding-bottom: 30px;
 }
-.social-icons .fa-brands{
+
+.social-icons a{
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons .fa-brands {
     margin-left: 40px;
     margin-right: 40px;
     font-size: 20px;
