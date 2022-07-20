@@ -33,7 +33,7 @@ body {
 .top-section-info p {
     margin-bottom: 20px;
 }
-
+    /* this style is for all the buttons*/
 .btn {
     text-decoration: none;
     color: white;
@@ -42,14 +42,16 @@ body {
     /* transition: width 0.5s; */
 }
 
-/* .btn:hover{
-    width: 400px;
-} */
+.btn:hover{
+    background-color: red;
+}
 .top-section img {
     margin-top: 20px;
     margin-right: 20px;
 }
-
+.top-section:hover{
+    transform: scale(0.75);
+}
 /* top section code ends here */
 
 /* Main section styles*/
@@ -82,12 +84,25 @@ body {
     font-size: 14px;
     padding: 5px;
 }
-
-.sidebar .selected {
-    background-color: #003865;
-    color: white;
+.sidebar a {
+    color: black;
+    text-decoration: none;
 }
 
+.sidebar .selected {
+    background-color: red;
+    color: white;
+}
+.sidebar h4:hover{
+    background-color: #003865;
+    /* color: white; */
+}
+/* .selected:hover{
+    background-color: #003865;
+} */
+.sidebar .selected a{
+    color: white;
+}
 /* blog styles */
 
 .blogs {
@@ -128,17 +143,20 @@ body {
     margin-top: 10px;
 }
 
+
 .time img {
+    /* to align img with text */
     vertical-align: middle;
 }
 
 .chat img {
     vertical-align: middle;
 }
-
-.view-all{
+/* this button is only for tablet */
+.view-all {
     display: none;
 }
+
 /* Middle section styles ends here */
 
 /* Footer styles starts here */
@@ -174,7 +192,7 @@ footer hr {
     padding-bottom: 30px;
 }
 
-.social-icons a{
+.social-icons a {
     text-decoration: none;
     color: white;
 }
@@ -183,4 +201,144 @@ footer hr {
     margin-left: 40px;
     margin-right: 40px;
     font-size: 20px;
+}
+footer .devloper{
+    margin-left: 5px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+/* Responsive code starts here */
+
+/* for mobile device */
+@media only screen and (max-width:376px) {
+    /* top section styles starts here */
+    .top-section {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: 80%;
+        margin-left: 50px;
+        margin-right: 0;
+    }
+    .top-section-info h1 {
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+    .top-section-info p{
+        margin-bottom: 30px;
+    }
+    .top-section img{
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+    /* top section styles ends here */
+
+    /* middle section styles starts here */
+    .middle-section{
+        display: block;
+        margin-left: 50px;
+    }
+    .sidebar{
+        background-color: white;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .sidebar h4{
+        border: 1px solid black;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* .blogs .blog-img{
+        width: 250px;
+    } */
+
+    /* middle section styles ends here */
+
+    /* footer styles starts here */
+    footer h1{
+        font-size: 30px;
+    }
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .social-icons{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-left: 0;
+        grid-row-gap: 30px;
+    }
+    footer .devloper{
+        margin-left: 5px;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+    /* footer styles ends here */
+}
+
+/* for tablet device */
+@media only screen and (min-width:377px) and (max-width:913px) {
+    /* top section styles  */
+    .top-section-info h1 {
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+
+    /* middle section styles */
+    .middle-section{
+        display: block;
+        margin-left: 0px;
+    }
+    .sidebar{
+        display: flex;
+        background-color: white;
+        margin-left: 25px;
+        margin-right: 0;
+        width: 800px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .sidebar h4{
+        border: 1px solid black;
+        margin: 20px 40px;
+        width: 180px;
+    }
+    .blogs{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 220px;
+    }
+    /* .blog{
+        width: 100%
+    } */
+
+    /* this blog is hidden */
+    .hidden-blog{
+        display: none;
+    }
+
+    /* view all button to show all blogs */
+    .view-all {
+        display:block;
+        width: 80px;
+        margin: 0 auto;
+    }
+
+    /* footer styles here */
+    .footer-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .social-icons{
+        margin-left: 180px;
+    }
+    footer .devloper{
+        margin-left: 5px;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
 }
