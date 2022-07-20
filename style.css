@@ -58,6 +58,7 @@ body {
 .middle-section {
     display: flex;
     width: 80%;
+    margin-bottom: 80px;
 }
 
 /* sidebar styles */
@@ -133,4 +134,38 @@ body {
 
 .chat img {
     vertical-align: middle;
+}
+/* Middle section styles ends here */
+
+/* Footer styles starts here */
+footer{
+    background-color: black;
+    color:white;
+}
+footer h1{
+    text-align: center;
+    padding-top: 100px;
+}
+footer hr{
+    width: 80%;
+    border-bottom: 0;
+}
+.footer-links{
+    margin-left: 40px;
+}
+.footer-links a{
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+    font-size: 12px;
+}
+.social-icons{
+    margin-left: 270px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.social-icons .fa-brands{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
 }
