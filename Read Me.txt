@@ -1,0 +1,11 @@
+Fifa football world cup Qatar 2022 website.
+Used HTML+CSS 
+Responsive website.
+ihpone se.()
+surface pro 7.(912x 1368)
+Font Graduate (google fonts)
+Images and favicon from internet.
+
+*********Assignment 02*************
+Code ©Amanat Ullah MAhmud
+Design ©Programming Hero
